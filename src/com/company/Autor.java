@@ -22,22 +22,4 @@ public class Autor {
     public void printingAutorInfo(Autor autor) {
         System.out.println("Имя автора: " + getFirstName() + ", фамилия автора: " + getLastName());
     }
-
-    @Override
-    public String toString() {
-        return "Имя автора: " + this.firstName + ", фамилия автора: " + this.lastName + ", ";
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Autor autor = (Autor) o;
-        return firstName.equals(autor.firstName) && lastName.equals(autor.lastName);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(firstName, lastName);
-    }
 }

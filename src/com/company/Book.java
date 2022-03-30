@@ -32,22 +32,4 @@ public class Book {
     public void printingBookInfo(Book book) {
         System.out.println("Имя книги: " + getBookName() + ", автор: " + getNameAutor() + ", год издания: " + getPublicationAge());
     }
-
-    @Override
-    public String toString() {
-        return "Имя книги: " + bookName + ", год издания: " + publicationAge;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Book book = (Book) o;
-        return bookName.equals(book.bookName);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(bookName);
-    }
 }
