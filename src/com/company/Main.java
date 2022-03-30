@@ -9,9 +9,13 @@ public class Main {
         Book book2 = new Book("Преступление и наказание", autor2, 2006);
         book1.setPublicationAge(2000);
 
-//        autor1.printingAutorInfo(autor1);
-//        autor2.printingAutorInfo(autor2);
+        autor1.printingAutorInfo(autor1);
+        autor2.printingAutorInfo(autor2);
         book1.printingBookInfo(book1);
         book2.printingBookInfo(book2);
+        System.out.println(autor1 + " " + book1);
+        System.out.println(book1.hashCode());
+        System.out.println(book2.hashCode());
+
     }
 }
