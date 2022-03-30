@@ -20,4 +20,8 @@ public class Autor {
     public void printingAutorInfo(Autor autor) {
         System.out.println("Имя автора: " + getFirstName() + ", фамилия автора: " + getLastName());
     }
+
+    public String toString() {
+        return "Имя автора: " + this.firstName + ", фамилия автора: " + this.lastName;
+    }
 }
