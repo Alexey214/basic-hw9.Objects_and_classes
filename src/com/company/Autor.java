@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Objects;
-
 public class Autor {
     private final String firstName;
     private final String lastName;
