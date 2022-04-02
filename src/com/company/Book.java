@@ -31,12 +31,12 @@ public class Book {
     }
 
     public void printingBookInfo(Book book) {
-        System.out.println("Имя книги: " + getBookName() + ", автор: " + getNameAutor() + ", год издания: " + getPublicationAge());
+        System.out.println("Имя книги: " + getBookName() + ", автор: " + getNameAutor() + "год издания: " + getPublicationAge());
     }
 
     @Override
     public String toString() {
-        return "Имя книги: " + bookName + ", год издания: " + publicationAge;
+        return nameAutor + ": " + bookName + ": " + publicationAge;
     }
 
     @Override

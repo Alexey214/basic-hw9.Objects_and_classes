@@ -25,7 +25,7 @@ public class Autor {
 
     @Override
     public String toString() {
-        return "Имя автора: " + this.firstName + ", фамилия автора: " + this.lastName + ", ";
+        return this.firstName + " " + this.lastName;
     }
 
     @Override
